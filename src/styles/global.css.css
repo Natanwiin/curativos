@@ -1,0 +1,87 @@
+/* src/styles/global.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f8fa;
+  color: #333;
+}
+
+/* Container centralizado */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card de autenticação */
+.auth-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Títulos */
+.auth-card h2 {
+  margin-bottom: 1.5rem;
+  color: #0077b6;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-card input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Botão */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  background: #0077b6;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background: #005f8a;
+}
+
+/* Link alternativo (ex: ir para registrar) */
+.auth-card p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}

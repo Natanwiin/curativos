@@ -1,0 +1,161 @@
+/* Home.css */
+
+/* Container geral */
+.home-container {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  padding: 16px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.home-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Botão de sair */
+.logout-button {
+  background: transparent;   /* sem fundo vermelho grandão */
+  color: #e74c3c;
+  border: none;
+  padding: 4px 8px;          /* menor padding */
+  font-size: 13px;           /* fonte menor */
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.logout-button:hover {
+  color: #fe240c;            /* apenas muda cor no hover */
+}
+
+
+/* Seção */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #010101;
+}
+
+.add-button {
+  font-size: 14px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Lista de pacientes */
+.pacientes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card de paciente */
+.paciente-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* garante alinhamento vertical */
+  background: #e2f3d8;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+.paciente-info-link {
+  flex: 1; /* ocupa todo espaço da esquerda */
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.paciente-nome {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 9px;
+  color: #000000;
+}
+
+.paciente-info {
+  font-size: 14px;
+  color: #000000;
+  margin: 5px 0;
+}
+
+/* Botão de curativo alinhado à direita */
+.curativo-button {
+  margin-left: 16px;
+  background: #28a745;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.curativo-button:hover {
+  background: #218838;
+}
+
+/* Botão flutuante */
+.fab-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+
+.fab-button:hover {
+  background: #0056b3;
+}
+
