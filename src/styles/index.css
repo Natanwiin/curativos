@@ -1,0 +1,75 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+button, .submit-button, .button, .button-green, .link-button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: 0.2s;
+}
+
+button:hover, .submit-button:hover, .button:hover, .button-green:hover, .link-button:hover {
+  opacity: 0.9;
+}
+
+.button {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.button-green {
+  background: #27ae60;
+  color: #fff;
+}
+
+.submit-button {
+  background: #3498db;
+  color: #fff;
+  width: 100%;
+}
+
+.link-button {
+  background: #3498db;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #3498db;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
