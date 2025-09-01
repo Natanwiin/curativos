@@ -39,8 +39,8 @@ export default function Login() {
   return (
     <div className="login-container">
       {/* Logo + Nome da empresa */}
-      <img src="/logo.png" alt="Logo da Empresa" className="login-logo" />
-      <h1 className="login-brand">Minha Empresa</h1>
+      <img src="public/logo.png" alt="Logo da Empresa" className="login-logo" />
+      <h1 className="login-brand">InfinityCodeZin</h1>
 
       {/* Card central */}
       <div className="login-card">
