@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
-import "./Login.css";
+import "./Login.css"; // css separado
 
 export default function Login() {
   const navigate = useNavigate();
@@ -38,50 +38,43 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      {/* Logo + Nome da empresa */}
-      <img src="public/logo.png" alt="Logo da Empresa" className="login-logo" />
-      <h1 className="login-brand">InfinityCodeZin</h1>
+      <h2 className="login-title">Login</h2>
+      <form onSubmit={handleSubmit} className="login-form">
+        <input
+          type="email"
+          placeholder="Digite seu e-mail"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="login-input"
+        />
+        <input
+          type="password"
+          placeholder="Digite sua senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+          required
+          className="login-input"
+        />
+        <button type="submit" className="login-button" disabled={loading}>
+          {loading ? "Entrando..." : "Entrar"}
+        </button>
+      </form>
 
-      {/* Card central */}
-      <div className="login-card">
-        <h2 className="login-title">Login</h2>
-        <form onSubmit={handleSubmit} className="login-form">
-          <input
-            type="email"
-            placeholder="Digite seu e-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="login-input"
-          />
-          <input
-            type="password"
-            placeholder="Digite sua senha"
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
-            required
-            className="login-input"
-          />
-          <button type="submit" className="login-button" disabled={loading}>
-            {loading ? "Entrando..." : "Entrar"}
-          </button>
-        </form>
+      {/* Novo botão de recuperação */}
+      <p className="login-footer">
+        <button 
+          onClick={handleResetPassword} 
+          className="login-link-button"
+        >
+          Esqueci minha senha
+        </button>
+      </p>
 
-        {/* Recuperação de senha */}
-        <p className="login-footer">
-          <button 
-            onClick={handleResetPassword} 
-            className="login-link-button"
-          >
-            Esqueci minha senha
-          </button>
-        </p>
-
-        {/* Link para registro */}
-        <p className="login-footer">
-          Não tem conta? <Link to="/register">Cadastre-se</Link>
-        </p>
-      </div>
+      {/* Link para registro */}
+      <p className="login-footer">
+        Não tem conta? <Link to="/register">Cadastre-se</Link>
+      </p>
     </div>
   );
 }
